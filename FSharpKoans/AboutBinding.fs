@@ -139,9 +139,9 @@ module ``02: About Binding`` =
             3 + a
         let c = a + 4
         let a = a + a
-        a |> should equal __
-        b |> should equal __
-        c |> should equal __
+        a |> should equal 42
+        b |> should equal 11
+        c |> should equal 25
 
 
     (*

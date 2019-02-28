@@ -143,6 +143,7 @@ module ``02: About Binding`` =
         b |> should equal __
         c |> should equal __
 
+
     (*
         The next test demonstrates *type inference*.
         
@@ -169,7 +170,7 @@ module ``02: About Binding`` =
         z |> should be ofType<float>
         a |> should be ofType<bool>
         b |> should be ofType<char>
-   
+
    (*
     What's a pattern?  A pattern is something that expresses the SHAPE of data.  Data may
     match the shape, or it may not match the shape.  IF AND ONLY IF it matches the shape, then
@@ -203,7 +204,7 @@ module ``02: About Binding`` =
     [<Test>]
     let ``11 Constant patterns fail if the sides don't match exactly`` () =
         (fun () ->
-            let 34.0 = 34
+            let 34 = 35
             ()
         ) |> should throw typeof<MatchFailureException>
 

@@ -158,19 +158,6 @@ module ``02: About Binding`` =
         http://fsharpforfunandprofit.com/posts/type-inference/
     *)
    
-    [<Ignore("Move elsewhere")>]
-    let ``05 The type of symbols in variable patterns are inferred`` () = 
-        let x = 50
-        let y = "a string"
-        let z = -4.23
-        let a = false
-        let b = 't'
-        x |> should be ofType<int>
-        y |> should be ofType<string>
-        z |> should be ofType<float>
-        a |> should be ofType<bool>
-        b |> should be ofType<char>
-
    (*
     What's a pattern?  A pattern is something that expresses the SHAPE of data.  Data may
     match the shape, or it may not match the shape.  IF AND ONLY IF it matches the shape, then
